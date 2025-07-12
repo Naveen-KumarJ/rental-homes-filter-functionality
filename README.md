@@ -1,12 +1,107 @@
-# React + Vite
+# 🏠 Rentak Homes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive part of real estate rental web application built with **React**, allowing users to **search**, **filter**, and **favourite** properties to rent. Designed with clean UI components and local storage for persisting favourites.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Project Overview
 
-## Expanding the ESLint configuration
+**Rentak Homes** is a property rental app where users can:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Search for rental homes based on location, price, move-in date, and property type.
+* Add or remove properties from their favourites.
+* Navigate between the home and favourites page.
+* Experience a smooth, responsive user interface.
+
+This project was built using **React + React Router**, with **ShadCN UI**, **TailwindCSS**, and **date-fns**.
+
+---
+
+## 🚀 Live Demo (Optional)
+
+> 
+
+---
+
+
+## ⚙️ Functionalities
+
+| Feature       | Description                                                             |
+| ------------- | ----------------------------------------------------------------------- |
+| 🏠 Home       | Displays list of all properties with image, price, type, etc.           |
+| 🔍 Search     | Search by property name using the header search box.                    |
+| 🎯 FilterBar  | Filter by location, date, price range, and type.                        |
+| ❤️ Favourites | Save/unsave properties using localStorage; persistent across reloads.   |
+| 🧭 Navigation | Header allows switching between Home and Favourites using React Router. |
+| ⚠️ Error Page | Displays a fallback UI for invalid routes.                              |
+
+---
+
+## 📦 Extra Packages Used
+
+| Package              | Purpose                                               |
+| -------------------- | ----------------------------------------------------- |
+| **react-router-dom** | Routing between pages (`/`, `/favourites`)            |
+| **date-fns**         | Date formatting for move-in calendar                  |
+| **ShadCN UI**        | Select, Calendar, Button, and other styled components |
+| **TailwindCSS**      | Utility-first CSS styling                             |
+| **react-icons**      | Icons for UI such as calendar, heart, bed, etc.       |
+
+---
+
+## 📚 What I Learned
+
+* How to structure a React app with `createBrowserRouter` and nested routes.
+* Managing shared state between components via `Outlet context`.
+* Using `localStorage` for persisting user data (favourites).
+* Building reusable UI components with ShadCN and Tailwind.
+* Date handling with `date-fns`.
+* Writing clean, scalable, and maintainable component-based architecture.
+
+---
+
+## 🔮 Future Improvements
+
+* ✅ Add pagination or infinite scroll for large property lists.
+* 🔎 Improve search algorithm (search by address/type/price).
+* 🗂️ Add backend support to fetch real-time data and store favourites server-side.
+* 📱 Improve mobile responsiveness (minor tweaks needed).
+* 💬 Add Toast/Notification for favourite action feedback.
+* 🔐 User authentication (login/logout) and user-based favourites.
+
+---
+
+## 📁 Folder Structure (Simplified)
+
+```
+src/
+├── assets/
+│   └── house_placeholder.png
+├── components/
+│   └── Header/
+├── pages/
+│   ├── Home/
+│   ├── Favourite/
+│   └── Error/
+├── data.js
+├── App.jsx
+├── main.jsx
+└── routes/
+    └── index.jsx
+```
+
+---
+
+## 🧾 How to Run Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/Naveen-KumarJ/rental-homes-filter-functionality.git
+cd rental-homes-filter-functionality
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
