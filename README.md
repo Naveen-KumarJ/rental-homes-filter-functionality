@@ -18,8 +18,7 @@ This project was built using **React + React Router**, with **ShadCN UI**, **Tai
 ---
 
 ## 🚀 Live Demo (Optional)
-
-> 
+> [Live demo](https://rental-homes-filter-functionality.vercel.app/)
 
 ---
 
